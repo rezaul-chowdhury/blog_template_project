@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.nav-container {
+  position: relative;
+}
+
+.blue-background {
+  background-color: #1a54e7;
+  height: 70px;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.nav-main {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  height: 70px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  align-items: center;
+  color: white;
+  margin-right: 34px;
+}
+
+.blog {
+  font-weight: normal;
+}
+
+.template {
+  font-weight: 900;
+}
+
+.fa-search {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.search-button {
+  background-color: #f0f0f0;
+  color: #a3a3a3;
+  cursor: pointer;
+  font-size: 15px;
+  height: 70px;
+  width: 60px;
+  border-radius: 0;
+  border: 0;
+}
+
+.search-button:hover {
+  background: #ccc;
+}
+
+.nav-section {
+  background-color: white;
+  display: flex;
+  font-size: 15px;
+  justify-content: space-between;
+  flex-grow: 1;
+  height: 70px;
+  align-items: center;
+}
+
+.nav-section ul {
+  padding: 0;
+}
+
+.nav-section-1 {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+.nav-section-1 a {
+  color: #a3a3a3;
+  text-decoration: none;
+  padding: 18px;
+}
+
+.nav-section-2 {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  /* background-color: bisque; */
+}
+
+.nav-section-2 a {
+  color: #1a54e7;
+  text-decoration: none;
+  padding: 18px;
+  /* background-color: aquamarine; */
+}
+
+.nav-section-2 li a:hover {
+  border-bottom: 3px solid #1a54e7;
+  padding-bottom: 22px;
+}
+
+.dots a i {
+  font-size: 5px;
+  position: relative;
+  bottom: 3px;
+}
+
+.section-1-container {
+  position: relative;
+}
+
+.img-slide-1,
+.img-slide-2,
+.img-slide-3,
+.img-slide-4,
+.img-slide-5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 800px;
+  width: 100%;
+  /* opacity: 0; */
+  /* transition: opacity 0.4s ease-in-out; */
+}
+
+/* .current {
+  opacity: 1;
+} */
+
+/* .fading {
+  opacity: 1;
+} */
+
+.arrow-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 400px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.arrow {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  opacity: 0.7;
+}
+
+.section-1 {
+  position: relative;
+  top: 200px;
+  z-index: 1;
+  height: 535px;
+}
+
+.section-1-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section-1-content-title {
+  color: white;
+}
+
+.section-1-content-img {
+  width: 5%;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.section-1-info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 277px;
+}
+
+.section-1-info h3 {
+  background-color: #1a54e7;
+  color: white;
+  margin: 0;
+  padding: 8px 15px;
+}
+
+.section-1-info p {
+  color: #a3a3a3;
+  margin: 0;
+}
+
+.section-1-info a,
+.section-3-info a {
+  color: #1a54e7;
+}
+
+.play-pause {
+  position: relative;
+  top: 230px;
+  cursor: pointer;
+  background-color: brown;
+  display: inline-block;
+}
+
+.nav-dots {
+  text-align: center;
+  position: relative;
+  top: 15rem;
+  /* background-color: blueviolet; */
+  /* color: gray;
+  position: relative;
+  top: 230px;
+  left: 50%;
+  right: 50%;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 10px; */
+  /* display: flex;
+  justify-content: center;
+  flex-direction: row; */
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+}
+
+.active {
+  background-color: black;
+}
+
+@media (max-width: 800px) {
+  .img-slide-1,
+  .img-slide-2,
+  .img-slide-3,
+  .img-slide-4,
+  .img-slide-5,
+  .arrow-container,
+  .section-1-content,
+  .section-1-info {
+    width: 100%;
+  }
+}
